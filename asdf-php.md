@@ -9,11 +9,13 @@ sudo apt update && sudo apt install -y autoconf bison build-essential curl gette
 ### OpenSSL
 
 ```bash
-cd $HOME
+cd $HOME/.local
+mkdir opt
+cd opt
 wget https://www.openssl.org/source/openssl-1.1.1i.tar.gz
-tar xzf $HOME/openssl-1.1.1i.tar.gz
+tar xzf openssl-1.1.1i.tar.gz
 cd openssl-1.1.1i
-./Configure --prefix=$HOME/openssl-1.1.1i/bin -fPIC -shared linux-x86_64
+./Configure --prefix=$HOME/.local/opt/openssl-1.1.1i/bin -fPIC -shared linux-x86_64
 make -j 8 
 make install
 ```
