@@ -6,4 +6,4 @@ Compilations of commands used to setup WSL Environment.
 
 ### PHP
 
-[a relative link](asdf-php.md)
+[asdf-php](asdf-php.md)
