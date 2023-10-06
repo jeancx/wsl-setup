@@ -32,4 +32,13 @@ So that way you can install composer later yourself.
 You can just change the desired version on command.
 ```bash
 export PKG_CONFIG_PATH=$HOME/openssl-1.1.1i/bin/lib/pkgconfig && asdf install php 7.4.30
+asdf global php 7.4.30
+asdf reshim
+```
+
+### Install composer
+```bash
+wget -O ~/composer-setup.php https://getcomposer.org/installer
+php ~/composer-setup.php --install-dir=$HOME/.asdf/installs/php/7.4.30/bin --filename=composer
+asdf reshim
 ```
