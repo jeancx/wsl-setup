@@ -33,7 +33,7 @@ So that way you can install composer later yourself.
 
 You can just change the desired version on command.
 ```bash
-export PKG_CONFIG_PATH=$HOME/openssl-1.1.1i/bin/lib/pkgconfig && asdf install php 7.4.30
+export PKG_CONFIG_PATH=$HOME/.local/opt/openssl-1.1.1i/bin/lib/pkgconfig && asdf install php 7.4.30
 asdf global php 7.4.30
 asdf reshim
 ```
